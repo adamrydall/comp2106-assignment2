@@ -1,13 +1,27 @@
 <%- include ../partials/header.ejs %>
 
-<main class="container">
-    <h1>Login</h1>
-
     <% if (messages.length > 0) { %>
         <div class="alert alert-danger"><% messages %></div>
     <% } %>
+    <div class="container">
 
-    <form method="post" action="/auth/login">
+        <form class="form-signin" method="post" action="/auth/login">
+            <h2 class="form-signin-heading">Please login</h2>
+            <label for="inputEmail" class="sr-only">Username:</label>
+            <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+            <label for="inputPassword" class="sr-only">Password</label>
+            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" value="remember-me"> Remember me
+                </label>
+            </div>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+        </form>
+
+    </div> <!-- /container -->
+    <form class="form-signin" method="post" action="/auth/login">
+        <h1 class="form-signin-heading">Login</h1>
         <fieldset>
             <label for="username" class="col-sm-2">Username: *</label>
             <input name="username" id="username" required />
@@ -16,13 +30,13 @@
             <label for="password" class="col-sm-2">Password: *</label>
             <input name="password" type="password" required />
         </fieldset>
-        <button class="btn btn-primary col-sm-offset-2">Login</button>
+        <button class="btn btn-primary">Login</button>
         <a href="/auth/github" title="Login With Github">
             <img src="/images/github-signin.png" alt="GitHub"/>
             </a>
         <hr />
         Need access? <a href="/auth/register" title="Register">Register</a>
     </form>
-</main>
+
 
 <%- include ../partials/footer.ejs %>
