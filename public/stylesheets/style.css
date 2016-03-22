@@ -6,3 +6,22 @@ body {
 a {
   color: #00B7FF;
 }
+
+/*.form-control {*/
+/*width: 40%;*/
+/*}*/
+
+form {
+  background-color: #2B2922;
+
+
+}
+/* Header Styles */
+
+
+
+/* Footer Styles */
+footer {
+  padding-top: 100em;
+  outline: black 3px solid;
+}

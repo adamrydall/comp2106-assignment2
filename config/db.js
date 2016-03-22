@@ -5,8 +5,8 @@ module.exports = {
     // 'url': 'mongodb://localhost/test'
 
     // live on mLab
-    'url': 'mongodb://gcrfreeman:2106pass@ds056288.mlab.com:56288/comp2106',
-    'githubClientId': '164e067e3f1ced9614a1',
-    'githubClientSecret': '5c81df4dc16ed215a8fab025bb9be3d1b149f689',
+    'url': 'mongodb://adamrydall:pass123@ds064718.mlab.com:64718/adamcomp2106',
+    'githubClientId': '3a75aa9df792f59afaf2',
+    'githubClientSecret': '9e351de9d5cd047c870ee49685609b9011b418c9',
     'githubCallbackUrl': 'http://localhost:3000/auth/github/callback'
 };
