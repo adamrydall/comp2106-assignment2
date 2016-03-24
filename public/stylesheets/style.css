@@ -16,6 +16,7 @@ a {
 /*width: 40%;*/
 /*}*/
 
+
 form {
   background-color: #2B2922;
 
@@ -29,6 +30,13 @@ form {
 }
 
 /* Footer Styles */
-footer {
-
+footer p {
+  color: white;
+  padding-top: 12px;
 }
+
+footer a {
+  color: white;
+  text-decoration: underline;
+}
+
