@@ -6,7 +6,7 @@ var passport = require('passport');
 var mongoose = require('mongoose');
 var Account = require('../models/account');
 var configDb = require('../config/db.js');
-var gitHub = require('passport-github2');
+//var gitHub = require('passport-github2');
 
 passport.serializeUser(function(user, done) {
     done(null, user.id);
@@ -17,44 +17,6 @@ passport.deserializeUser(function(id, done) {
         done(err, user);
     });
 });
-
-
-// github auth config
-passport.use(new gitHub({
-    clientID: configDb.githubClientId,
-    clientSecret: configDb.githubClientSecret,
-    callbackURL: configDb.githubCallbackUrl
-}, function(accessToken, refreshToken, profile, done) {
-        var searchQuery = { name: profile.displayName };
-
-        var updates = {
-            name: profile.displayName,
-            someID: profile.id
-        };
-
-        var options = { upsert: true };
-
-        Account.findOneAndUpdate(searchQuery, updates, options, function(err, user) {
-            if (err) {
-                return done(err);
-            }
-            else {
-                return done(null, user);
-            }
-        });
-    }
-));
-
-// GET github login
-router.get('/github', passport.authenticate('github', { scope: ['user.email'] }));
-
-// GET github callback
-router.get('/github/callback', passport.authenticate('github', {
-    failureRedirect: '/auth/login'}),
-    function(req, res) {
-        res.redirect('/articles');
-    }
-);
 
 // GET login - show login form
 router.get('/login', function(req, res, next) {

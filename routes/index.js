@@ -4,7 +4,7 @@ var router = express.Router();
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', {
-      title: 'First Express Page',
+      title: 'Good Eats | Find Good Food Near You',
         message: 'This works pretty well so far'});
 });
 
