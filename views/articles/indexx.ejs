@@ -7,8 +7,11 @@
         <% for (var i = 0; i < articles.length; i++) { %>
         <li class="list-group-item">
             <!-- link to /artices/:id -->
-            <a href="/articles/<%= articles[i]._id%>" title="Read More">
-                <%= articles[i].title %></a>
+            <p href="/articles/<%= articles[i]._id%>" title="Read More">
+                <%= articles[i].title %></p>
+            <p> <%= articles[i].content %> </p>
+            
+
         </li>
         <% } %>
     </ul>

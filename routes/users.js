@@ -38,4 +38,26 @@ router.get('/', function(req, res, next) {
         }
     });
 });
+
+
+// GET handler for edit to show the populated form
+router.get('/:id', function(req, res, next) {
+    // create an id variable to store the id from the url
+    var id = req.params.id;
+
+    // look up the selected article
+    Article.findById(id, function(err, article) {
+        if (err) {
+            console.log(err);
+            res.end(err);
+        }
+        else {
+            // show the edit view
+            res.render('articles/show', {
+                title: 'Article Details',
+                article: article
+            });
+        }
+    });
+});
 module.exports = router;
