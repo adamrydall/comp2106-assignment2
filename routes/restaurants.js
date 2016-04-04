@@ -78,9 +78,8 @@ router.post('/:id', isLoggedIn, function(req, res, next) {
     var id = req.params.id;
 
     // fill the article object
-    var Restaurant = new Restaurant( {
+    var restaurant = new Restaurant( {
         _id: id,
-        founded: req.body.founded,
         RestaurantName: req.body.RestaurantName,
         about: req.body.about,
         phone: req.body.phone,
