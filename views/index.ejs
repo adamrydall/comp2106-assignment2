@@ -1,8 +1,12 @@
+<!-- Include Header -->
 <%- include partials/header.ejs %>
-
-    <h1><%= title %></h1>
-    <p class="jumbotron"><%= message %></p>
-
-    <a href="/auth/login" title="Login">Login</a> or <a href="/auth/register" title="Register">Register</a>
-
+<main class="container well">
+    <div class="jumbotron">
+        <h1><%= title %></h1>
+        <h2>Barrie Restaurant Directory</h2>
+        <p>This site is built using the Node.JS and Express Framework and uses M-Labs online database.</p>
+        <br>
+        <p>If you are an admin, login to add edit or delete a Restaurant.</p>
+    </div>
+<!-- Include Footer -->
 <%- include partials/footer.ejs %>

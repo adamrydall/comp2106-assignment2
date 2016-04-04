@@ -1,20 +1,22 @@
+<!-- Include Header -->
 <%- include ../partials/header.ejs %>
 
 <main class="container">
     <h1>Articles</h1>
 
-    <ul class="list-group">
+    <ul class="list-group clearfix">
         <% for (var i = 0; i < articles.length; i++) { %>
         <li class="list-group-item">
             <!-- link to /artices/:id -->
             <p href="/articles/<%= articles[i]._id%>" title="Read More">
                 <%= articles[i].title %></p>
-            <p> <%= articles[i].content %> </p>
-            
+            <p class=""> <%= articles[i].content %> </p>
+
 
         </li>
         <% } %>
     </ul>
 </main>
 
+<!-- Include Footer -->
 <%- include ../partials/footer.ejs %>
