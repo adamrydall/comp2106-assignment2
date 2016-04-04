@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f4066a1f-15ee-429b-ac99-2ba1136821fa" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/restaurant.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/models/article.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/articles/show.ejs" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/routes/articles.js" afterPath="$PROJECT_DIR$/routes/restaurants.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/views/articles.ejs" afterPath="$PROJECT_DIR$/views/restaurants.ejs" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/views/articles/add.ejs" afterPath="$PROJECT_DIR$/views/restaurants/add.ejs" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/views/articles/edit.ejs" afterPath="$PROJECT_DIR$/views/restaurants/edit.ejs" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/views/articles/index.ejs" afterPath="$PROJECT_DIR$/views/restaurants/index.ejs" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/views/articles/indexx.ejs" afterPath="$PROJECT_DIR$/views/restaurants/indexx.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/auth.js" afterPath="$PROJECT_DIR$/routes/auth.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/users.js" afterPath="$PROJECT_DIR$/routes/users.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/partials/header.ejs" afterPath="$PROJECT_DIR$/views/partials/header.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/restaurants/add.ejs" afterPath="$PROJECT_DIR$/views/restaurants/add.ejs" />
     </list>
     <ignored path="assignment2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -59,8 +46,8 @@
       <file leaf-file-name="add.ejs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/restaurants/add.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.1388889">
-              <caret line="7" column="54" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
+            <state vertical-scroll-proportion="0.07936508">
+              <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -877,8 +864,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/restaurants/add.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1388889">
-          <caret line="7" column="54" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
+        <state vertical-scroll-proportion="0.07936508">
+          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
           <folding />
         </state>
       </provider>
