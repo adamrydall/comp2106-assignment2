@@ -66,7 +66,7 @@ router.get('/:id', isLoggedIn, function(req, res, next) {
            // show the edit view
            res.render('restaurants/edit', {
                title: 'Restaurant Details',
-               restaurants: restaurants
+               restaurant: restaurant
            });
        }
     });
@@ -80,8 +80,6 @@ router.post('/:id', isLoggedIn, function(req, res, next) {
     // fill the article object
     var Restaurant = new Restaurant( {
         _id: id,
-        title: req.body.title,
-        content: req.body.content,
         founded: req.body.founded,
         RestaurantName: req.body.RestaurantName,
         about: req.body.about,
