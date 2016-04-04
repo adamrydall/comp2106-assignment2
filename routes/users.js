@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 
 var mongoose = require('mongoose');
-var Article = require('../models/article');
+var Restaurant = require('../models/restaurant');
 
 /* GET users listing.
 router.get('/', function(req, res, next) {
@@ -18,10 +18,10 @@ router.get('/', function(req, res, next) {
 
 */
 
-// set up the GET handler for the main articles page
+// set up the GET handler for the main restaurants page
 router.get('/', function(req, res, next) {
-    // use the Article model to retrieve all articles
-    Article.find(function (err, articles) {
+    // use the Article model to retrieve all restaurants
+    Restaurant.find(function (err, restaurants) {
         // if we have an error
         if (err) {
             console.log(err);
@@ -30,34 +30,15 @@ router.get('/', function(req, res, next) {
         else {
             // we got data back
             // show the view and pass the data to it
-            res.render('articles/indexx', {
+            res.render('restaurants/indexx', {
 
-                title: 'Articles',
-                articles: articles
+                title: 'Restaurants',
+                restaurants: restaurants
             });
         }
     });
 });
 
 
-// GET handler for edit to show the populated form
-router.get('/:id', function(req, res, next) {
-    // create an id variable to store the id from the url
-    var id = req.params.id;
 
-    // look up the selected article
-    Article.findById(id, function(err, article) {
-        if (err) {
-            console.log(err);
-            res.end(err);
-        }
-        else {
-            // show the edit view
-            res.render('articles/show', {
-                title: 'Article Details',
-                article: article
-            });
-        }
-    });
-});
 module.exports = router;

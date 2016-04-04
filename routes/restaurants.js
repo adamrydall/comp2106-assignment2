@@ -2,13 +2,13 @@ var express = require('express');
 var router = express.Router();
 
 var mongoose = require('mongoose');
-var Article = require('../models/article');
+var Restaurant = require('../models/restaurant');
 var passport = require('passport');
 
-// set up the GET handler for the main articles page
+// set up the GET handler for the main restaurants page
 router.get('/', isLoggedIn, function(req, res, next) {
-    // use the Article model to retrieve all articles
-    Article.find(function (err, articles) {
+    // use the Article model to retrieve all restaurants
+    Restaurant.find(function (err, restaurants) {
         // if we have an error
         if (err) {
             console.log(err);
@@ -17,10 +17,10 @@ router.get('/', isLoggedIn, function(req, res, next) {
         else {
             // we got data back
             // show the view and pass the data to it
-            res.render('articles/index', {
+            res.render('restaurants/index', {
 
-                title: 'Articles',
-                articles: articles
+                title: 'Restaurants',
+                restaurants: restaurants
             });
         }
     });
@@ -29,7 +29,7 @@ router.get('/', isLoggedIn, function(req, res, next) {
 // GET handler for add to display a blank form
 router.get('/add', isLoggedIn, function(req, res, next) {
 
-    res.render('articles/add', {
+    res.render('restaurants/add', {
         title: 'Add a New Article'
     });
 });
@@ -38,14 +38,17 @@ router.get('/add', isLoggedIn, function(req, res, next) {
 router.post('/add', isLoggedIn, function(req, res, next) {
 
     // save a new article using our Article model and mongoose
-    Article.create( {
-            title: req.body.title,
-            content: req.body.content
-        }
-    );
+    Restaurant.create({
+        founded: req.body.founded,
+        RestaurantName: req.body.RestaurantName,
+        about: req.body.about,
+        phone: req.body.phone,
+        address: req.body.address,
+        website: req.body.website
+    });
 
-    // redirect to main articles page
-    res.redirect('/articles');
+    // redirect to main restaurants page
+    res.redirect('/restaurants');
 });
 
 // GET handler for edit to show the populated form
@@ -54,16 +57,16 @@ router.get('/:id', isLoggedIn, function(req, res, next) {
     var id = req.params.id;
 
     // look up the selected article
-    Article.findById(id,  function(err, article) {
+    Restaurant.findById(id,  function(err, restaurant) {
        if (err) {
            console.log(err);
            res.end(err);
        }
         else {
            // show the edit view
-           res.render('articles/edit', {
-               title: 'Article Details',
-               article: article
+           res.render('restaurants/edit', {
+               title: 'Restaurant Details',
+               restaurants: restaurants
            });
        }
     });
@@ -75,20 +78,26 @@ router.post('/:id', isLoggedIn, function(req, res, next) {
     var id = req.params.id;
 
     // fill the article object
-    var article = new Article( {
+    var Restaurant = new Restaurant( {
         _id: id,
         title: req.body.title,
-        content: req.body.content
+        content: req.body.content,
+        founded: req.body.founded,
+        RestaurantName: req.body.RestaurantName,
+        about: req.body.about,
+        phone: req.body.phone,
+        address: req.body.address,
+        website: req.body.website
     });
 
     // use mongoose and our Article model to update
-    Article.update( { _id: id }, article,  function(err) {
+    Restaurant.update( { _id: id }, restaurant,  function(err) {
         if (err) {
             console.log(err)
             res.end(err);
         }
         else {
-            res.redirect('/articles');
+            res.redirect('/restaurants');
         }
     });
 });
@@ -100,14 +109,14 @@ router.get('/delete/:id', isLoggedIn, function(req, res, next) {
 
     console.log('trying to delete');
 
-    Article.remove({ _id: id }, function(err) {
+    Restaurant.remove({ _id: id }, function(err) {
         if (err) {
             console.log(err);
             res.end(err);
         }
         else {
-            // show updated articles list
-            res.redirect('/articles');
+            // show updated restaurants list
+            res.redirect('/restaurants');
         }
     });
 });

@@ -6,7 +6,7 @@ var passport = require('passport');
 var mongoose = require('mongoose');
 var Account = require('../models/account');
 var configDb = require('../config/db.js');
-//var gitHub = require('passport-github2');
+
 
 passport.serializeUser(function(user, done) {
     done(null, user.id);
@@ -69,14 +69,14 @@ router.get('/welcome', isLoggedIn, function(req, res, next) {
 router.post('/register', function(req, res, next) {
     /* Try to create a new account using our Account model & the form values
     If we get an error display the register form again
-    If registration works, store the user and show the articles main page */
+    If registration works, store the user and show the restaurants main page */
     Account.register(new Account({ username: req.body.username }), req.body.password, function(err, account) {
         if (err) {
            return res.render('auth/register', { title: 'Register' });
         }
         else {
             /*req.login(account, function(err) {
-                res.redirect('/articles');
+                res.redirect('/restaurants');
             });*/
             res.redirect('/auth/login');
         }

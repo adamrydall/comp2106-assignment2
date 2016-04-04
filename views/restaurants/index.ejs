@@ -4,14 +4,14 @@
 <main class="container">
     <h1>Articles</h1>
 
-    <a href="/articles/add" title="Add Article">Add a new Article</a>
+    <a href="/restaurants/add" title="Add Restaurant">Add a new Restaurant</a>
 
     <ul class="list-group">
-        <% for (var i = 0; i < articles.length; i++) { %>
+        <% for (var i = 0; i < restaurants.length; i++) { %>
             <li class="list-group-item">
                 <!-- link to /artices/:id -->
-                <a href="/articles/<%= articles[i]._id%>" title="Read More">
-                    <%= articles[i].title %></a>
+                <a href="/restaurants/<%= restaurants[i]._id%>" title="Read More">
+                    <%= restaurants[i].RestaurantName %></a>
             </li>
         <% } %>
     </ul>
