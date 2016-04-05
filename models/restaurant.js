@@ -28,6 +28,10 @@ var restaurantSchema = new mongoose.Schema({
         type: String,
         default: ''
     }
+    //img: {
+    //    data: Buffer,
+    //    contentType: String
+    //}
 });
 
 // Make public

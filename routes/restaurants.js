@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-
+//var fs = require('fs');
 var mongoose = require('mongoose');
 var Restaurant = require('../models/restaurant');
 var passport = require('passport');
@@ -30,6 +30,23 @@ router.get('/add', isLoggedIn, function(req, res, next) {
         title: 'Add A Restaurant'
     });
 });
+
+
+
+
+// Trying to incorporate IMG uploads to Mongo
+
+
+//var img = new imgPath;
+//a.img.data = fs.readFileSync(imgPath);
+//a.img.contentType = 'image/png';
+//a.save(function (err, a) {
+//    if (err) throw err;
+//
+//    console.log('saved img to mongo');
+
+
+
 
 // POST handler
 router.post('/add', isLoggedIn, function(req, res, next) {

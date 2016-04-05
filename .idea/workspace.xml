@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f4066a1f-15ee-429b-ac99-2ba1136821fa" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/restaurant.js" afterPath="$PROJECT_DIR$/models/restaurant.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/restaurants.js" afterPath="$PROJECT_DIR$/routes/restaurants.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/auth/login.ejs" afterPath="$PROJECT_DIR$/views/auth/login.ejs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/auth/register.ejs" afterPath="$PROJECT_DIR$/views/auth/register.ejs" />
     </list>
@@ -24,11 +26,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="restaurants.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/restaurants.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="login.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/auth/login.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.875">
-              <caret line="11" column="60" selection-start-line="11" selection-start-column="60" selection-end-line="11" selection-end-column="60" />
+            <state vertical-scroll-proportion="-10.0">
+              <caret line="16" column="86" selection-start-line="16" selection-start-column="86" selection-end-line="16" selection-end-column="86" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="restaurant.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/restaurant.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -37,38 +69,18 @@
       <file leaf-file-name="register.ejs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/auth/register.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.29761904">
-              <caret line="15" column="58" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
+            <state vertical-scroll-proportion="0.15873016">
+              <caret line="8" column="70" selection-start-line="8" selection-start-column="70" selection-end-line="8" selection-end-column="70" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="indexx.ejs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/restaurants/indexx.ejs">
+      <file leaf-file-name="auth.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/auth.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.125">
-              <caret line="13" column="59" selection-start-line="13" selection-start-column="59" selection-end-line="13" selection-end-column="59" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="error.ejs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/error.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.ejs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/index.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.125">
-              <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="86" column="37" selection-start-line="86" selection-start-column="37" selection-end-line="86" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -84,41 +96,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.ejs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/partials/header.ejs">
+      <file leaf-file-name="account.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/account.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.125">
-              <caret line="21" column="54" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="54" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="2" column="63" selection-start-line="2" selection-start-column="63" selection-end-line="2" selection-end-column="63" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="add.ejs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/restaurants/add.ejs">
+      <file leaf-file-name="restaurant.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/restaurant.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.0">
-              <caret line="8" column="87" selection-start-line="8" selection-start-column="87" selection-end-line="8" selection-end-column="87" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="30" column="12" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit.ejs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/restaurants/edit.ejs">
+      <file leaf-file-name="scripts.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/javascripts/scripts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-20.625">
-              <caret line="33" column="11" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.ejs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/restaurants/index.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.25">
-              <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="39" selection-start-line="0" selection-start-column="39" selection-end-line="0" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -153,7 +155,6 @@
         <option value="$PROJECT_DIR$/routes/restaurant.js" />
         <option value="$PROJECT_DIR$/routes/index.js" />
         <option value="$PROJECT_DIR$/models/account.js" />
-        <option value="$PROJECT_DIR$/models/restaurant.js" />
         <option value="$PROJECT_DIR$/config/db.js" />
         <option value="$PROJECT_DIR$/public/javascripts/scripts.js" />
         <option value="$PROJECT_DIR$/views/auth/welcome.ejs" />
@@ -163,11 +164,12 @@
         <option value="$PROJECT_DIR$/views/restaurants.ejs" />
         <option value="$PROJECT_DIR$/bin/www" />
         <option value="$PROJECT_DIR$/routes/auth.js" />
-        <option value="$PROJECT_DIR$/routes/restaurants.js" />
         <option value="$PROJECT_DIR$/views/partials/footer.ejs" />
         <option value="$PROJECT_DIR$/views/partials/header.ejs" />
         <option value="$PROJECT_DIR$/views/restaurants/add.ejs" />
         <option value="$PROJECT_DIR$/views/restaurants/edit.ejs" />
+        <option value="$PROJECT_DIR$/models/restaurant.js" />
+        <option value="$PROJECT_DIR$/routes/restaurants.js" />
         <option value="$PROJECT_DIR$/views/auth/login.ejs" />
         <option value="$PROJECT_DIR$/views/auth/register.ejs" />
       </list>
@@ -325,66 +327,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assignment2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assignment2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assignment2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assignment2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assignment2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assignment2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assignment2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assignment2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -470,7 +412,7 @@
     <frame x="4" y="23" width="1436" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32920793" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -677,14 +619,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/scripts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="39" selection-start-line="0" selection-start-column="39" selection-end-line="0" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -717,58 +651,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/account.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="63" selection-start-line="2" selection-start-column="63" selection-end-line="2" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/restaurant.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/auth.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="86" column="37" selection-start-line="86" selection-start-column="37" selection-end-line="86" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/restaurant.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Procfile">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/restaurants.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.296296">
-          <caret line="53" column="6" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="6" />
           <folding />
         </state>
       </provider>
@@ -853,18 +739,74 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/models/account.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="63" selection-start-line="2" selection-start-column="63" selection-end-line="2" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/restaurant.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="12" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="39" selection-start-line="0" selection-start-column="39" selection-end-line="0" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/auth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="86" column="37" selection-start-line="86" selection-start-column="37" selection-end-line="86" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/restaurant.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/restaurants.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/auth/login.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.875">
-          <caret line="11" column="60" selection-start-line="11" selection-start-column="60" selection-end-line="11" selection-end-column="60" />
+        <state vertical-scroll-proportion="-10.0">
+          <caret line="16" column="86" selection-start-line="16" selection-start-column="86" selection-end-line="16" selection-end-column="86" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/auth/register.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29761904">
-          <caret line="15" column="58" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
+        <state vertical-scroll-proportion="0.15873016">
+          <caret line="8" column="70" selection-start-line="8" selection-start-column="70" selection-end-line="8" selection-end-column="70" />
           <folding />
         </state>
       </provider>
