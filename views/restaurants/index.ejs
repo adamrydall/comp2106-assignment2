@@ -9,7 +9,6 @@
     <ul class="list-group">
         <% for (var i = 0; i < restaurants.length; i++) { %>
             <li class="list-group-item">
-                <!-- link to /artices/:id -->
                 <a href="/restaurants/<%= restaurants[i]._id%>" title="Read More">
                     <%= restaurants[i].RestaurantName %></a>
             </li>

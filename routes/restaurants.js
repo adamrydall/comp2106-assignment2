@@ -5,9 +5,9 @@ var mongoose = require('mongoose');
 var Restaurant = require('../models/restaurant');
 var passport = require('passport');
 
-// set up the GET handler for the main restaurants page
+// GET handler for the main restaurants page
 router.get('/', isLoggedIn, function(req, res, next) {
-    // use the Article model to retrieve all restaurants
+    // Model to retrieve all restaurants
     Restaurant.find(function (err, restaurants) {
         // if we have an error
         if (err) {
@@ -15,10 +15,7 @@ router.get('/', isLoggedIn, function(req, res, next) {
             res.end(err);
         }
         else {
-            // we got data back
-            // show the view and pass the data to it
             res.render('restaurants/index', {
-
                 title: 'Restaurants',
                 restaurants: restaurants
             });
@@ -26,7 +23,7 @@ router.get('/', isLoggedIn, function(req, res, next) {
     });
 });
 
-// GET handler for add to display a blank form
+// GET handler for add
 router.get('/add', isLoggedIn, function(req, res, next) {
 
     res.render('restaurants/add', {
@@ -34,10 +31,10 @@ router.get('/add', isLoggedIn, function(req, res, next) {
     });
 });
 
-// POST handler for add to process the form
+// POST handler
 router.post('/add', isLoggedIn, function(req, res, next) {
 
-    // save a new article using our Article model and mongoose
+    // save the restaurant
     Restaurant.create({
         founded: req.body.founded,
         RestaurantName: req.body.RestaurantName,
@@ -47,23 +44,23 @@ router.post('/add', isLoggedIn, function(req, res, next) {
         website: req.body.website
     });
 
-    // redirect to main restaurants page
+    // redirect
     res.redirect('/restaurants');
 });
 
-// GET handler for edit to show the populated form
+// GET handler to show existing data
 router.get('/:id', isLoggedIn, function(req, res, next) {
-   // create an id variable to store the id from the url
+   // Store the id from the url
     var id = req.params.id;
 
-    // look up the selected article
+    // Use selected restaurant
     Restaurant.findById(id,  function(err, restaurant) {
        if (err) {
            console.log(err);
            res.end(err);
        }
         else {
-           // show the edit view
+           // Edit view
            res.render('restaurants/edit', {
                title: 'Restaurant Details',
                restaurant: restaurant
@@ -72,12 +69,12 @@ router.get('/:id', isLoggedIn, function(req, res, next) {
     });
 });
 
-// POST handler for edit to update the article
+// POST handler
 router.post('/:id', isLoggedIn, function(req, res, next) {
-    // create an id variable to store the id from the url
+    // Store the id from the url
     var id = req.params.id;
 
-    // fill the article object
+    // fill the scheme
     var restaurant = new Restaurant( {
         _id: id,
         RestaurantName: req.body.RestaurantName,
@@ -87,7 +84,7 @@ router.post('/:id', isLoggedIn, function(req, res, next) {
         website: req.body.website
     });
 
-    // use mongoose and our Article model to update
+    // Update the data
     Restaurant.update( { _id: id }, restaurant,  function(err) {
         if (err) {
             console.log(err)
@@ -99,9 +96,9 @@ router.post('/:id', isLoggedIn, function(req, res, next) {
     });
 });
 
-// GET handler for delete using the article id parameter
+// GET handler using ID
 router.get('/delete/:id', isLoggedIn, function(req, res, next) {
-   // grab the id parameter from the url
+   // Use the ID from url
     var id = req.params.id;
 
     console.log('trying to delete');
@@ -112,16 +109,15 @@ router.get('/delete/:id', isLoggedIn, function(req, res, next) {
             res.end(err);
         }
         else {
-            // show updated restaurants list
+            // show restaurants list
             res.redirect('/restaurants');
         }
     });
 });
 
-// auth check
+// auth check function
 function isLoggedIn(req, res, next) {
-
-    // is the user authenticated?
+    // Check user status
     if (req.isAuthenticated()) {
         return next();
     }

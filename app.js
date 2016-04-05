@@ -7,14 +7,14 @@ var bodyParser = require('body-parser');
 
 var mongoose = require('mongoose');
 
-// auth packages
+// Auth packages
 var passport = require('passport');
 var session = require('express-session');
 var flash = require('connect-flash');
 var LocalStrategy = require('passport-local').Strategy;
 
 var routes = require('./routes/index');
-var users = require('./routes/users');
+var users = require('./routes/restaurant');
 var restaurants = require('./routes/restaurants');
 var auth = require('./routes/auth');
 
@@ -45,22 +45,10 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
-// use the Account model we built
+// Use Account model
 var Account = require('./models/account');
 passport.use(Account.createStrategy());
 passport.use(new LocalStrategy(Account.authenticate()));
-
-
-/* passport.use(new LocalStrategy(
-    function(username, password, done) {
-      Account.findOne({ username: username }, function (err, user) {
-        if (err) { return done(err); }
-        if (!user) { return done(null, false); }
-        if (!user.verifyPassword(password)) { return done(null, false); }
-        return done(null, user);
-      });
-    }
-)); */
 
 // methods for accessing the session data
 passport.serializeUser(Account.serializeUser());
@@ -80,12 +68,6 @@ db.once('open', function(callback) {
   console.log('Connected to mongodb');
 });
 
-// connect to local instance directly
-// mongoose.connect('mongodb://localhost/test');
-
-// connect to mlab instance directly
-// mongoose.connect('mongodb://gcrfreeman:2106pass@ds056288.mlab.com:56288/comp2106');
-
 // read db connection string from our config file
 var configDb = require('./config/db.js');
 mongoose.connect(configDb.url);
@@ -98,7 +80,6 @@ app.use(function(req, res, next) {
 });
 
 // error handlers
-
 // development error handler
 // will print stacktrace
 if (app.get('env') === 'development') {
@@ -120,6 +101,5 @@ app.use(function(err, req, res, next) {
     error: {}
   });
 });
-
 
 module.exports = app;

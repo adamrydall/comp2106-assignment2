@@ -1,7 +1,7 @@
 // link to mongoose
 var mongoose = require('mongoose');
 
-// define the article schema
+// define the schema for M-Labs
 var restaurantSchema = new mongoose.Schema({
     founded: {
         type: Date,
@@ -10,7 +10,6 @@ var restaurantSchema = new mongoose.Schema({
     RestaurantName: {
         type: String,
         default: '',
-        trim: true,
         required: 'Name is required and cannot be blank.'
     },
     about: {
@@ -31,5 +30,5 @@ var restaurantSchema = new mongoose.Schema({
     }
 });
 
-// make it public
+// Make public
 module.exports = mongoose.model('Restaurant', restaurantSchema);

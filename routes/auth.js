@@ -18,7 +18,7 @@ passport.deserializeUser(function(id, done) {
     });
 });
 
-// GET login - show login form
+// GET login form
 router.get('/login', function(req, res, next) {
     // store the session messages in a local variable
     var messages = req.session.messages || [];
@@ -67,17 +67,12 @@ router.get('/welcome', isLoggedIn, function(req, res, next) {
 
 // POST register - save new user
 router.post('/register', function(req, res, next) {
-    /* Try to create a new account using our Account model & the form values
-    If we get an error display the register form again
-    If registration works, store the user and show the restaurants main page */
+    /* Try to create a new account, show the restaurants main page */
     Account.register(new Account({ username: req.body.username }), req.body.password, function(err, account) {
         if (err) {
            return res.render('auth/register', { title: 'Register' });
         }
         else {
-            /*req.login(account, function(err) {
-                res.redirect('/restaurants');
-            });*/
             res.redirect('/auth/login');
         }
     });
@@ -85,8 +80,6 @@ router.post('/register', function(req, res, next) {
 
 // GET logout
 router.get('/logout', function(req, res, next) {
-    // we can use either of these
-    //req.session.destroy();
     req.logout();
     res.redirect('/');
 });

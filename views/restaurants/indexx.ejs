@@ -7,15 +7,11 @@
     <ul class="list-group clearfix">
         <% for (var i = 0; i < restaurants.length; i++) { %>
         <li class="list-group-item">
-            <!-- link to /artices/:id -->
-            <p href="/restaurants/<%= restaurants[i]._id%>" title="Read More">
-                <%= restaurants[i].RestaurantName %></p>
+            <p href="/restaurants/<%= restaurants[i]._id%>"><%= restaurants[i].RestaurantName %></p>
             <p class=""> <%= restaurants[i].about %> </p>
             <p class=""> <%= restaurants[i].phone %> </p>
             <p class=""> <%= restaurants[i].address %> </p>
             <p class=""> <%= restaurants[i].website %> </p>
-
-
         </li>
         <% } %>
     </ul>

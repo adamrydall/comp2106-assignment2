@@ -10,6 +10,6 @@ var Account = new schema({
 
 Account.plugin(passportLocalMongoose);
 
-// make public to the rest of the app
+// Make Public
 module.exports = mongoose.model('Account', Account);
 

@@ -1,20 +1,12 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET home page. */
+// GET home page
 router.get('/', function(req, res, next) {
   res.render('index', {
-      title: 'Good Eats | Find Good Food Near You',
-        message: 'This works pretty well so far'});
+      title: 'Good Eats | Find Good Food Near You'
+  });
 });
 
-/* GET random page */
-router.get('/random', function(req, res, next) {
-   
-    var ranNum = Math.random();
-    res.render('random', { title: 'Random',
-                          ranNum: ranNum });
-});
-
-// make this public so the rest of app can see it
+// Make Public
 module.exports = router;
