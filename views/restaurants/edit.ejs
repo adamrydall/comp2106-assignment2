@@ -5,30 +5,29 @@
     <h1>Restaurant Details</h1>
     <form method="post" action="<%= restaurant._id %>">
         <fieldset class="form-group">
-            <label for="RestaurantName" class="col-sm-2">Name: *</label>
+            <label for="RestaurantName" class="col-sm-2">Name:</label>
             <input name="RestaurantName" id="RestaurantName" required value="<%= restaurant.RestaurantName %>" />
         </fieldset>
         <fieldset class="form-group">
-            <label for="title" class="col-sm-2">About: *</label>
+            <label for="title" class="col-sm-2">About:</label>
             <input name="about" id="about" required value="<%= restaurant.about %>" />
         </fieldset>
         <fieldset class="form-group">
-            <label for="phone" class="col-sm-2">Phone Number: *</label>
+            <label for="phone" class="col-sm-2">Phone Number:</label>
             <input name="phone" id="phone" required value="<%= restaurant.phone %>" />
         </fieldset>
         <fieldset class="form-group">
-            <label for="address" class="col-sm-2">Address: *</label>
+            <label for="address" class="col-sm-2">Address:</label>
             <input name="address" id="address" required value="<%= restaurant.address %>" />
         </fieldset>
         <fieldset class="form-group">
-            <label for="website" class="col-sm-2">Website: *</label>
+            <label for="website" class="col-sm-2">Website:</label>
             <input name="website" id="website" required value="<%= restaurant.website %>" />
         </fieldset>
         <div>
             <%= restaurant.created %>
         </div>
         <button class="btn btn-primary col-sm-offset-2">Save</button>
-
         <a href="/restaurants/delete/<%= restaurant._id %>" title="Delete" class="confirmation">
             <button class="btn btn-danger" type="button">Delete</button>
         </a>

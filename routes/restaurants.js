@@ -27,7 +27,7 @@ router.get('/', isLoggedIn, function(req, res, next) {
 router.get('/add', isLoggedIn, function(req, res, next) {
 
     res.render('restaurants/add', {
-        title: 'Add a New Article'
+        title: 'Add A Restaurant'
     });
 });
 
